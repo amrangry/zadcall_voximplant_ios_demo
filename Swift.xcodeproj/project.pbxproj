@@ -1,0 +1,1602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F6078C5752A945E6D0FDB57 /* Pods_AudioCallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F17227A7298B32C4CA73AB /* Pods_AudioCallKit.framework */; };
+		6F1D64581B60E42C4715680F /* Pods_AudioCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433429A9281683A46CF5D023 /* Pods_AudioCall.framework */; };
+		7D82282B8778809A00BC48BD /* Pods_Voximplant_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65519B101EBDA4AC37089F2F /* Pods_Voximplant_Demo.framework */; };
+		7E5442A7243BA58A00450A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E544280243BA58A00450A73 /* Main.storyboard */; };
+		7E5442A8243BA58A00450A73 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544282243BA58A00450A73 /* Storyboard.swift */; };
+		7E5442A9243BA58A00450A73 /* ConferenceParticipantView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E544285243BA58A00450A73 /* ConferenceParticipantView.xib */; };
+		7E5442AA243BA58A00450A73 /* ConferenceParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544286243BA58A00450A73 /* ConferenceParticipantView.swift */; };
+		7E5442AB243BA58A00450A73 /* ConferenceCallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544288243BA58A00450A73 /* ConferenceCallButton.swift */; };
+		7E5442AC243BA58A00450A73 /* ConferenceCallButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E544289243BA58A00450A73 /* ConferenceCallButton.xib */; };
+		7E5442AD243BA58A00450A73 /* ConferenceCallButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54428A243BA58A00450A73 /* ConferenceCallButtonModel.swift */; };
+		7E5442AE243BA58A00450A73 /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54428B243BA58A00450A73 /* ConferenceView.swift */; };
+		7E5442AF243BA58A00450A73 /* ConferenceCallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54428C243BA58A00450A73 /* ConferenceCallModel.swift */; };
+		7E5442B0243BA58A00450A73 /* ConferenceCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54428D243BA58A00450A73 /* ConferenceCallViewController.swift */; };
+		7E5442B1243BA58A00450A73 /* StoryAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54428E243BA58A00450A73 /* StoryAssembler.swift */; };
+		7E5442B2243BA58A00450A73 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544290243BA58A00450A73 /* LoginView.swift */; };
+		7E5442B3243BA58A00450A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544291243BA58A00450A73 /* LoginViewController.swift */; };
+		7E5442B4243BA58A00450A73 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544292243BA58A00450A73 /* LoginTextField.swift */; };
+		7E5442B5243BA58A00450A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E544294243BA58A00450A73 /* Assets.xcassets */; };
+		7E5442B6243BA58A00450A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E544295243BA58A00450A73 /* LaunchScreen.storyboard */; };
+		7E5442B8243BA58A00450A73 /* LeaveConferenceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E544299243BA58A00450A73 /* LeaveConferenceUseCase.swift */; };
+		7E5442B9243BA58A00450A73 /* ManageConferenceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54429A243BA58A00450A73 /* ManageConferenceUseCase.swift */; };
+		7E5442BA243BA58A00450A73 /* JoinConferenceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54429B243BA58A00450A73 /* JoinConferenceUseCase.swift */; };
+		7E5442BC243BA58A00450A73 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54429E243BA58A00450A73 /* Errors.swift */; };
+		7E5442BD243BA58A00450A73 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54429F243BA58A00450A73 /* NibLoadable.swift */; };
+		7E5442BE243BA58A00450A73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7E5442A0243BA58A00450A73 /* README.md */; };
+		7E5442BF243BA58A00450A73 /* VoximplantConferenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5442A2243BA58A00450A73 /* VoximplantConferenceService.swift */; };
+		7E5442C0243BA58A00450A73 /* VoximplantAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5442A3243BA58A00450A73 /* VoximplantAuthService.swift */; };
+		7E5442C1243BA58A00450A73 /* VoximplantAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5442A4243BA58A00450A73 /* VoximplantAPIService.swift */; };
+		7E5442C2243BA58A00450A73 /* PermissionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5442A5243BA58A00450A73 /* PermissionsService.swift */; };
+		7E5442C3243BA58A00450A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5442A6243BA58A00450A73 /* AppDelegate.swift */; };
+		7E5442C4243BA60F00450A73 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8E20022EB4139006CCCFF /* Shared.xcassets */; };
+		7E9F20E8243C7812002B5700 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F20E6243C77A7002B5700 /* AlertHelper.swift */; };
+		7E9F20E9243C7813002B5700 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F20E6243C77A7002B5700 /* AlertHelper.swift */; };
+		7E9F20EA243C7813002B5700 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F20E6243C77A7002B5700 /* AlertHelper.swift */; };
+		7E9F20EB243C7817002B5700 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F00F9322C610E00061AF13 /* UIExtensions.swift */; };
+		8E87346121D3D292008E75B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E87345F21D3D292008E75B5 /* README.md */; };
+		8E87346221D3D292008E75B5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E87346021D3D292008E75B5 /* LICENSE.md */; };
+		8EA9CF08204EAF7400C05397 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9CF07204EAF7400C05397 /* Theme.swift */; };
+		8EEA98B41FB5A1AD00E90861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA98B31FB5A1AD00E90861 /* AppDelegate.swift */; };
+		8EEA98B61FB5A1AD00E90861 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA98B51FB5A1AD00E90861 /* LoginViewController.swift */; };
+		8EEA98BB1FB5A1AD00E90861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EEA98BA1FB5A1AD00E90861 /* Assets.xcassets */; };
+		92049F9022DCD177006DB07F /* ColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92049F8F22DCD177006DB07F /* ColoredButton.swift */; };
+		92049F9922DDDD47006DB07F /* ButtonWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92049F9822DDDD47006DB07F /* ButtonWithLabel.swift */; };
+		921A728D22B8DC59001BB4E5 /* IncomingCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A728C22B8DC59001BB4E5 /* IncomingCallViewController.swift */; };
+		9220152722CA41F60023B5A7 /* LabelWithTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220152622CA41F60023B5A7 /* LabelWithTimer.swift */; };
+		92A6571A22BA3F5D004701D4 /* KeyPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A6571922BA3F5D004701D4 /* KeyPadView.xib */; };
+		92A6571C22BA598A004701D4 /* KeyPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6571B22BA598A004701D4 /* KeyPadView.swift */; };
+		92A6571E22BA60EF004701D4 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6571D22BA60EF004701D4 /* CallViewController.swift */; };
+		92AC727722BB9938007CCB93 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC727622BB9938007CCB93 /* MainViewController.swift */; };
+		92AF8C8322CBA73200888C51 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92AF8C8222CBA73200888C51 /* README.md */; };
+		92B6829F22F4492A002244B5 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6829E22F4492A002244B5 /* PermissionManager.swift */; };
+		92C8E1F622E99419006CCCFF /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8E1F522E99419006CCCFF /* Errors.swift */; };
+		92C8E20122EB4139006CCCFF /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8E20022EB4139006CCCFF /* Shared.xcassets */; };
+		92C8E20222EB4139006CCCFF /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8E20022EB4139006CCCFF /* Shared.xcassets */; };
+		92D040B722C4A1DE007B74B4 /* CallFailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D040B622C4A1DE007B74B4 /* CallFailedViewController.swift */; };
+		92F00F9222C60B7F0061AF13 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F00F9122C60B7F0061AF13 /* CustomTextField.swift */; };
+		92F00F9422C610E00061AF13 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F00F9322C610E00061AF13 /* UIExtensions.swift */; };
+		C51340D822F8971F000F4BFE /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51340D622F8971C000F4BFE /* Application.swift */; };
+		C51841FF239684A2006778E6 /* fennelliott-beeping.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51841F9239684A2006778E6 /* fennelliott-beeping.wav */; };
+		C5184200239684A2006778E6 /* fennelliott-beeping.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51841F9239684A2006778E6 /* fennelliott-beeping.wav */; };
+		C5184201239684A2006778E6 /* fennelliott-beeping.wav in Resources */ = {isa = PBXBuildFile; fileRef = C51841F9239684A2006778E6 /* fennelliott-beeping.wav */; };
+		C5393E9D240D38420064006F /* CXAudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5393E9C240D38410064006F /* CXAudioFile.swift */; };
+		C5491E6222F98EA8001D9601 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFCF22B773BC009C7F2D /* Log.swift */; };
+		C5491E6322F98EB0001D9601 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8E1F522E99419006CCCFF /* Errors.swift */; };
+		C5491E6422F98EBE001D9601 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6829E22F4492A002244B5 /* PermissionManager.swift */; };
+		C5491E6522F98EC7001D9601 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFD722B78633009C7F2D /* TokenManager.swift */; };
+		C5491E6722F99230001D9601 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F00F9122C60B7F0061AF13 /* CustomTextField.swift */; };
+		C5491E6822F99295001D9601 /* KeyPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6571B22BA598A004701D4 /* KeyPadView.swift */; };
+		C5491E6922F99298001D9601 /* LabelWithTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9220152622CA41F60023B5A7 /* LabelWithTimer.swift */; };
+		C5491E6A22F9944B001D9601 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFA522B77197009C7F2D /* UIHelper.swift */; };
+		C5491E6B22F99961001D9601 /* ButtonWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92049F9822DDDD47006DB07F /* ButtonWithLabel.swift */; };
+		C5491E6C22F99AE4001D9601 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F00F9322C610E00061AF13 /* UIExtensions.swift */; };
+		C5491E6D22F99AF3001D9601 /* ColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92049F8F22DCD177006DB07F /* ColoredButton.swift */; };
+		C5491E6E22F99D8C001D9601 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51340D622F8971C000F4BFE /* Application.swift */; };
+		C5491E7122F99E0A001D9601 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B64D22D35B57007DC646 /* Roboto-Bold.ttf */; };
+		C5491E7222F99E0E001D9601 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B64E22D35B57007DC646 /* Roboto-Regular.ttf */; };
+		C5491E7322F9CF99001D9601 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8E20022EB4139006CCCFF /* Shared.xcassets */; };
+		C54DB017230147C300415EF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54DB016230147C300415EF3 /* AuthService.swift */; };
+		C54DB019230147CB00415EF3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54DB018230147CB00415EF3 /* AuthService.swift */; };
+		C5517F7A240D4A1D00C37867 /* noisecollector-beam.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C5517F79240D4A1D00C37867 /* noisecollector-beam.aiff */; };
+		C5517F7B240D4A1D00C37867 /* noisecollector-beam.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C5517F79240D4A1D00C37867 /* noisecollector-beam.aiff */; };
+		C5517F7C240D4A1D00C37867 /* noisecollector-beam.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C5517F79240D4A1D00C37867 /* noisecollector-beam.aiff */; };
+		C5551BBD22C4FEC6003A90A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5551BBA22C4FEC6003A90A9 /* SettingsViewController.swift */; };
+		C5551BBE22C4FEC6003A90A9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5551BBB22C4FEC6003A90A9 /* SettingTableViewCell.swift */; };
+		C5551BBF22C4FEC6003A90A9 /* SettingsDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5551BBC22C4FEC6003A90A9 /* SettingsDetailTableViewController.swift */; };
+		C58D0F4823D1A18200A337EB /* LoudAudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0F4623D1A16E00A337EB /* LoudAudioFile.swift */; };
+		C590E7C32322E0F300E112D7 /* CallWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590E7C22322E0F300E112D7 /* CallWrapper.swift */; };
+		C5A248C322B3F7150008FAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A248C222B3F7150008FAF4 /* Assets.xcassets */; };
+		C5A8B61422D33569007DC646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B61322D33569007DC646 /* AppDelegate.swift */; };
+		C5A8B61D22D3356A007DC646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B61C22D3356A007DC646 /* Assets.xcassets */; };
+		C5A8B62E22D35A0D007DC646 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B62822D35A0D007DC646 /* CallManager.swift */; };
+		C5A8B63222D35A3A007DC646 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B63122D35A3A007DC646 /* README.md */; };
+		C5A8B63C22D35A84007DC646 /* CXExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B63722D35A84007DC646 /* CXExtensions.swift */; };
+		C5A8B64522D35AC0007DC646 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B64022D35AC0007DC646 /* LoginViewController.swift */; };
+		C5A8B64722D35AC0007DC646 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B64222D35AC0007DC646 /* CallViewController.swift */; };
+		C5A8B64922D35AC0007DC646 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B64422D35AC0007DC646 /* MainViewController.swift */; };
+		C5A8B64F22D35B57007DC646 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B64D22D35B57007DC646 /* Roboto-Bold.ttf */; };
+		C5A8B65022D35B57007DC646 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B64E22D35B57007DC646 /* Roboto-Regular.ttf */; };
+		C5A8B65422D35B64007DC646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B65122D35B63007DC646 /* Main.storyboard */; };
+		C5A8B65522D35B64007DC646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B65222D35B63007DC646 /* LaunchScreen.storyboard */; };
+		C5A8B65622D35B64007DC646 /* KeyPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5A8B65322D35B63007DC646 /* KeyPadView.xib */; };
+		C5A8B66022D36D94007DC646 /* PushCallNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A8B65C22D36D94007DC646 /* PushCallNotifier.swift */; };
+		C5E0CFAF22B77198009C7F2D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFA522B77197009C7F2D /* UIHelper.swift */; };
+		C5E0CFB522B77198009C7F2D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFAB22B77198009C7F2D /* LoginViewController.swift */; };
+		C5E0CFBB22B771A0009C7F2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E0CFB622B771A0009C7F2D /* LaunchScreen.storyboard */; };
+		C5E0CFBD22B771A0009C7F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E0CFB822B771A0009C7F2D /* Main.storyboard */; };
+		C5E0CFD222B773BC009C7F2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFCE22B773BC009C7F2D /* AppDelegate.swift */; };
+		C5E0CFD322B773BC009C7F2D /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFCF22B773BC009C7F2D /* Log.swift */; };
+		C5E0CFDB22B78633009C7F2D /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFD722B78633009C7F2D /* TokenManager.swift */; };
+		C5E0CFE422B787FC009C7F2D /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E0CFE222B787FC009C7F2D /* CallManager.swift */; };
+		CCC49035527628A7858EC419 /* CameraPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49834203B1A76385A4170 /* CameraPreprocessor.swift */; };
+		CCC490E9B4BE368B70290A44 /* CallKitCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4906BF0A95E0B4C2120DB /* CallKitCallManager.swift */; };
+		CCC4927CE761DE13C2DAE8FC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC49E089A8C2B508BB41F45 /* Roboto-Bold.ttf */; };
+		CCC492858EB7282AA47F554F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC499078F2B01F18BEEFA65 /* LaunchScreen.storyboard */; };
+		CCC492C1E7A1EDE973F8F396 /* NotificationCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49FA3B85C0ADD1004439B /* NotificationCallManager.swift */; };
+		CCC492F342C5D67A7817583B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC49400BF4083B8A847E5DE /* Roboto-Regular.ttf */; };
+		CCC492F49D7BFF70DC8D60BE /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49744B0AD4FD8B846011F /* CallViewController.swift */; };
+		CCC49714DABAFC7CAA033F90 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49FFC14C3B73630F79C99 /* UIHelper.swift */; };
+		CCC4977892FEA43CCA89647A /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCC496137D0B89EBA0630819 /* Settings.plist */; };
+		CCC49816A01C531BC34CB298 /* ringtone.aiff in Resources */ = {isa = PBXBuildFile; fileRef = CCC4992F44D29BCD94399E4B /* ringtone.aiff */; };
+		CCC498F59BFC27654895B2F1 /* CustomCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49D66A2C4F22D7BCD0A8D /* CustomCamera.swift */; };
+		CCC499656A96BEF87DB86BE4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4957B1C1960994048FF98 /* MainViewController.swift */; };
+		CCC49B74A3381D7361B52CF6 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49BF0B0DB536600405A02 /* CallManager.swift */; };
+		CCC49BCE7D8B72E6BC0C0419 /* ConferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49FD6C8261D664410E4A5 /* ConferenceView.swift */; };
+		CCC49C6056A7AD7A8858EFA5 /* VoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC492D00742D08A53364017 /* VoxController.swift */; };
+		CCC49C7F300BCAE8F040C8EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC492F2B2E3646CF534F67B /* BaseViewController.swift */; };
+		CCC49D30AE9A409752166283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC49B17EE2DA30729AC7FCA /* Main.storyboard */; };
+		CCC49EF1E1DBDE7F6598462C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC497500C8EDA589EAD7F10 /* Settings.swift */; };
+		CCC49FB0513FDFD9B086E1CD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC4967DF41EEB4E5BA1A8B5 /* Log.swift */; };
+		EFC225E0F15D76131C341091 /* Pods_Conference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EED8F397B1B51CDACDEAF5 /* Pods_Conference.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14F17227A7298B32C4CA73AB /* Pods_AudioCallKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioCallKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDA1DB80F23DA3798B331D7 /* Pods-Conference.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.release.xcconfig"; path = "Target Support Files/Pods-Conference/Pods-Conference.release.xcconfig"; sourceTree = "<group>"; };
+		3BA49D925EB27328780F4D5C /* Pods-AudioCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioCall.debug.xcconfig"; path = "Target Support Files/Pods-AudioCall/Pods-AudioCall.debug.xcconfig"; sourceTree = "<group>"; };
+		433429A9281683A46CF5D023 /* Pods_AudioCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51EED8F397B1B51CDACDEAF5 /* Pods_Conference.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conference.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFA7EF3ECDEFF26703AE8A1 /* Pods-Voximplant Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voximplant Demo.release.xcconfig"; path = "Target Support Files/Pods-Voximplant Demo/Pods-Voximplant Demo.release.xcconfig"; sourceTree = "<group>"; };
+		65519B101EBDA4AC37089F2F /* Pods_Voximplant_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voximplant_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E54426B243BA52800450A73 /* Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E544281243BA58A00450A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E544282243BA58A00450A73 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		7E544285243BA58A00450A73 /* ConferenceParticipantView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConferenceParticipantView.xib; sourceTree = "<group>"; };
+		7E544286243BA58A00450A73 /* ConferenceParticipantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceParticipantView.swift; sourceTree = "<group>"; };
+		7E544288243BA58A00450A73 /* ConferenceCallButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceCallButton.swift; sourceTree = "<group>"; };
+		7E544289243BA58A00450A73 /* ConferenceCallButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConferenceCallButton.xib; sourceTree = "<group>"; };
+		7E54428A243BA58A00450A73 /* ConferenceCallButtonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceCallButtonModel.swift; sourceTree = "<group>"; };
+		7E54428B243BA58A00450A73 /* ConferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
+		7E54428C243BA58A00450A73 /* ConferenceCallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceCallModel.swift; sourceTree = "<group>"; };
+		7E54428D243BA58A00450A73 /* ConferenceCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceCallViewController.swift; sourceTree = "<group>"; };
+		7E54428E243BA58A00450A73 /* StoryAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryAssembler.swift; sourceTree = "<group>"; };
+		7E544290243BA58A00450A73 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7E544291243BA58A00450A73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7E544292243BA58A00450A73 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		7E544294243BA58A00450A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E544296243BA58A00450A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E544297243BA58A00450A73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E544299243BA58A00450A73 /* LeaveConferenceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveConferenceUseCase.swift; sourceTree = "<group>"; };
+		7E54429A243BA58A00450A73 /* ManageConferenceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageConferenceUseCase.swift; sourceTree = "<group>"; };
+		7E54429B243BA58A00450A73 /* JoinConferenceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinConferenceUseCase.swift; sourceTree = "<group>"; };
+		7E54429E243BA58A00450A73 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		7E54429F243BA58A00450A73 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		7E5442A0243BA58A00450A73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7E5442A2243BA58A00450A73 /* VoximplantConferenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoximplantConferenceService.swift; sourceTree = "<group>"; };
+		7E5442A3243BA58A00450A73 /* VoximplantAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoximplantAuthService.swift; sourceTree = "<group>"; };
+		7E5442A4243BA58A00450A73 /* VoximplantAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoximplantAPIService.swift; sourceTree = "<group>"; };
+		7E5442A5243BA58A00450A73 /* PermissionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsService.swift; sourceTree = "<group>"; };
+		7E5442A6243BA58A00450A73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E9F20E6243C77A7002B5700 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		7F5ACE2A438EC9842FA70FEF /* Pods-AudioCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioCall.release.xcconfig"; path = "Target Support Files/Pods-AudioCall/Pods-AudioCall.release.xcconfig"; sourceTree = "<group>"; };
+		89014556023F6FFACF6C7FBD /* Pods-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.debug.xcconfig"; path = "Target Support Files/Pods-Conference/Pods-Conference.debug.xcconfig"; sourceTree = "<group>"; };
+		8E85E3881FBB06E50033831A /* VoximplantDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoximplantDemo.entitlements; sourceTree = "<group>"; };
+		8E87345F21D3D292008E75B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8E87346021D3D292008E75B5 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		8EA9CF07204EAF7400C05397 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8EDEB75B1FD022E4000EC892 /* VoximplantDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoximplantDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8EEA98B01FB5A1AD00E90861 /* Voximplant Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voximplant Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EEA98B31FB5A1AD00E90861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EEA98B51FB5A1AD00E90861 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8EEA98BA1FB5A1AD00E90861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92049F8F22DCD177006DB07F /* ColoredButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredButton.swift; sourceTree = "<group>"; };
+		92049F9822DDDD47006DB07F /* ButtonWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonWithLabel.swift; path = Shared/UI/ButtonWithLabel.swift; sourceTree = SOURCE_ROOT; };
+		921A728C22B8DC59001BB4E5 /* IncomingCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallViewController.swift; sourceTree = "<group>"; };
+		9220152622CA41F60023B5A7 /* LabelWithTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithTimer.swift; sourceTree = "<group>"; };
+		92A6571922BA3F5D004701D4 /* KeyPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyPadView.xib; sourceTree = "<group>"; };
+		92A6571B22BA598A004701D4 /* KeyPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPadView.swift; sourceTree = "<group>"; };
+		92A6571D22BA60EF004701D4 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		92AC727622BB9938007CCB93 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		92AF8C8222CBA73200888C51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		92B6829E22F4492A002244B5 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		92C8E1F522E99419006CCCFF /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		92C8E20022EB4139006CCCFF /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
+		92D040B622C4A1DE007B74B4 /* CallFailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallFailedViewController.swift; sourceTree = "<group>"; };
+		92DB9E612333C8B5007BF73C /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		92F00F9122C60B7F0061AF13 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		92F00F9322C610E00061AF13 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		C51340D622F8971C000F4BFE /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		C51841F9239684A2006778E6 /* fennelliott-beeping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "fennelliott-beeping.wav"; sourceTree = "<group>"; };
+		C5393E9C240D38410064006F /* CXAudioFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXAudioFile.swift; sourceTree = "<group>"; };
+		C54DB016230147C300415EF3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C54DB018230147CB00415EF3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C5517F79240D4A1D00C37867 /* noisecollector-beam.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "noisecollector-beam.aiff"; sourceTree = "<group>"; };
+		C5551BBA22C4FEC6003A90A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C5551BBB22C4FEC6003A90A9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		C5551BBC22C4FEC6003A90A9 /* SettingsDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDetailTableViewController.swift; sourceTree = "<group>"; };
+		C58D0F4623D1A16E00A337EB /* LoudAudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoudAudioFile.swift; sourceTree = "<group>"; };
+		C590E7C22322E0F300E112D7 /* CallWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallWrapper.swift; sourceTree = "<group>"; };
+		C5A248B922B3F7140008FAF4 /* AudioCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A248C222B3F7150008FAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5A248C722B3F7150008FAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A8B61122D33569007DC646 /* AudioCallKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioCallKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A8B61322D33569007DC646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5A8B61C22D3356A007DC646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5A8B62822D35A0D007DC646 /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		C5A8B63122D35A3A007DC646 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C5A8B63722D35A84007DC646 /* CXExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXExtensions.swift; sourceTree = "<group>"; };
+		C5A8B64022D35AC0007DC646 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C5A8B64222D35AC0007DC646 /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		C5A8B64422D35AC0007DC646 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C5A8B64D22D35B57007DC646 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C5A8B64E22D35B57007DC646 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C5A8B65122D35B63007DC646 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C5A8B65222D35B63007DC646 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5A8B65322D35B63007DC646 /* KeyPadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyPadView.xib; sourceTree = "<group>"; };
+		C5A8B65722D35BBB007DC646 /* AudioCallKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioCallKit.entitlements; sourceTree = "<group>"; };
+		C5A8B65822D35CF5007DC646 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A8B65C22D36D94007DC646 /* PushCallNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushCallNotifier.swift; sourceTree = "<group>"; };
+		C5E0CFA522B77197009C7F2D /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		C5E0CFAB22B77198009C7F2D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C5E0CFB622B771A0009C7F2D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5E0CFB822B771A0009C7F2D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C5E0CFCE22B773BC009C7F2D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5E0CFCF22B773BC009C7F2D /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C5E0CFD722B78633009C7F2D /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		C5E0CFE222B787FC009C7F2D /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		CCC4906BF0A95E0B4C2120DB /* CallKitCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallKitCallManager.swift; sourceTree = "<group>"; };
+		CCC492D00742D08A53364017 /* VoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoxController.swift; sourceTree = "<group>"; };
+		CCC492D1E3DC7CD9273A9595 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CCC492F2B2E3646CF534F67B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CCC49400BF4083B8A847E5DE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CCC4957B1C1960994048FF98 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CCC496137D0B89EBA0630819 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Settings.plist; sourceTree = "<group>"; };
+		CCC4967DF41EEB4E5BA1A8B5 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		CCC49744B0AD4FD8B846011F /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		CCC497500C8EDA589EAD7F10 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CCC49834203B1A76385A4170 /* CameraPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreprocessor.swift; sourceTree = "<group>"; };
+		CCC499078F2B01F18BEEFA65 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCC4992F44D29BCD94399E4B /* ringtone.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = ringtone.aiff; sourceTree = "<group>"; };
+		CCC49B17EE2DA30729AC7FCA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CCC49BF0B0DB536600405A02 /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		CCC49D66A2C4F22D7BCD0A8D /* CustomCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCamera.swift; sourceTree = "<group>"; };
+		CCC49E089A8C2B508BB41F45 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CCC49FA3B85C0ADD1004439B /* NotificationCallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCallManager.swift; sourceTree = "<group>"; };
+		CCC49FD6C8261D664410E4A5 /* ConferenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceView.swift; sourceTree = "<group>"; };
+		CCC49FFC14C3B73630F79C99 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		DA3458E1AF5E98710715085B /* Pods-AudioCallKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioCallKit.debug.xcconfig"; path = "Target Support Files/Pods-AudioCallKit/Pods-AudioCallKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E3C6A5D040C67D56C32C6412 /* Pods-AudioCallKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioCallKit.release.xcconfig"; path = "Target Support Files/Pods-AudioCallKit/Pods-AudioCallKit.release.xcconfig"; sourceTree = "<group>"; };
+		EC3BF8286786AE1BB06A110E /* Pods-Voximplant Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voximplant Demo.debug.xcconfig"; path = "Target Support Files/Pods-Voximplant Demo/Pods-Voximplant Demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E544268243BA52800450A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC225E0F15D76131C341091 /* Pods_Conference.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEA98AD1FB5A1AD00E90861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D82282B8778809A00BC48BD /* Pods_Voximplant_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A248B622B3F7140008FAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1D64581B60E42C4715680F /* Pods_AudioCall.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A8B60E22D33569007DC646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6078C5752A945E6D0FDB57 /* Pods_AudioCallKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DD0F974DCACD349A4CA3C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DB9E612333C8B5007BF73C /* PushKit.framework */,
+				433429A9281683A46CF5D023 /* Pods_AudioCall.framework */,
+				14F17227A7298B32C4CA73AB /* Pods_AudioCallKit.framework */,
+				51EED8F397B1B51CDACDEAF5 /* Pods_Conference.framework */,
+				65519B101EBDA4AC37089F2F /* Pods_Voximplant_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		369334A608BD108D7AD7AA32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BA49D925EB27328780F4D5C /* Pods-AudioCall.debug.xcconfig */,
+				7F5ACE2A438EC9842FA70FEF /* Pods-AudioCall.release.xcconfig */,
+				DA3458E1AF5E98710715085B /* Pods-AudioCallKit.debug.xcconfig */,
+				E3C6A5D040C67D56C32C6412 /* Pods-AudioCallKit.release.xcconfig */,
+				89014556023F6FFACF6C7FBD /* Pods-Conference.debug.xcconfig */,
+				2DDA1DB80F23DA3798B331D7 /* Pods-Conference.release.xcconfig */,
+				EC3BF8286786AE1BB06A110E /* Pods-Voximplant Demo.debug.xcconfig */,
+				5DFA7EF3ECDEFF26703AE8A1 /* Pods-Voximplant Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E54426C243BA52800450A73 /* Conference */ = {
+			isa = PBXGroup;
+			children = (
+				7E5442A6243BA58A00450A73 /* AppDelegate.swift */,
+				7E5442A0243BA58A00450A73 /* README.md */,
+				7E54427F243BA58A00450A73 /* Stories */,
+				7E544298243BA58A00450A73 /* UseCases */,
+				7E5442A1243BA58A00450A73 /* Services */,
+				7E54429C243BA58A00450A73 /* Utils */,
+				7E544293243BA58A00450A73 /* Resources */,
+			);
+			path = Conference;
+			sourceTree = "<group>";
+		};
+		7E54427F243BA58A00450A73 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				7E544280243BA58A00450A73 /* Main.storyboard */,
+				7E544282243BA58A00450A73 /* Storyboard.swift */,
+				7E54428E243BA58A00450A73 /* StoryAssembler.swift */,
+				7E54428F243BA58A00450A73 /* Login */,
+				7E544283243BA58A00450A73 /* ConferenceCall */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		7E544283243BA58A00450A73 /* ConferenceCall */ = {
+			isa = PBXGroup;
+			children = (
+				7E544284243BA58A00450A73 /* ConferenceParticipantView */,
+				7E544287243BA58A00450A73 /* ConferenceCallButton */,
+				7E54428B243BA58A00450A73 /* ConferenceView.swift */,
+				7E54428C243BA58A00450A73 /* ConferenceCallModel.swift */,
+				7E54428D243BA58A00450A73 /* ConferenceCallViewController.swift */,
+			);
+			path = ConferenceCall;
+			sourceTree = "<group>";
+		};
+		7E544284243BA58A00450A73 /* ConferenceParticipantView */ = {
+			isa = PBXGroup;
+			children = (
+				7E544285243BA58A00450A73 /* ConferenceParticipantView.xib */,
+				7E544286243BA58A00450A73 /* ConferenceParticipantView.swift */,
+			);
+			path = ConferenceParticipantView;
+			sourceTree = "<group>";
+		};
+		7E544287243BA58A00450A73 /* ConferenceCallButton */ = {
+			isa = PBXGroup;
+			children = (
+				7E544288243BA58A00450A73 /* ConferenceCallButton.swift */,
+				7E544289243BA58A00450A73 /* ConferenceCallButton.xib */,
+				7E54428A243BA58A00450A73 /* ConferenceCallButtonModel.swift */,
+			);
+			path = ConferenceCallButton;
+			sourceTree = "<group>";
+		};
+		7E54428F243BA58A00450A73 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E544290243BA58A00450A73 /* LoginView.swift */,
+				7E544291243BA58A00450A73 /* LoginViewController.swift */,
+				7E544292243BA58A00450A73 /* LoginTextField.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E544293243BA58A00450A73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E544294243BA58A00450A73 /* Assets.xcassets */,
+				7E544295243BA58A00450A73 /* LaunchScreen.storyboard */,
+				7E544297243BA58A00450A73 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E544298243BA58A00450A73 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7E54429B243BA58A00450A73 /* JoinConferenceUseCase.swift */,
+				7E54429A243BA58A00450A73 /* ManageConferenceUseCase.swift */,
+				7E544299243BA58A00450A73 /* LeaveConferenceUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7E54429C243BA58A00450A73 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7E54429E243BA58A00450A73 /* Errors.swift */,
+				7E54429F243BA58A00450A73 /* NibLoadable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7E5442A1243BA58A00450A73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7E5442A2243BA58A00450A73 /* VoximplantConferenceService.swift */,
+				7E5442A3243BA58A00450A73 /* VoximplantAuthService.swift */,
+				7E5442A4243BA58A00450A73 /* VoximplantAPIService.swift */,
+				7E5442A5243BA58A00450A73 /* PermissionsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E9DA3F2206144A500721415 /* CameraHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				CCC49834203B1A76385A4170 /* CameraPreprocessor.swift */,
+				CCC49D66A2C4F22D7BCD0A8D /* CustomCamera.swift */,
+			);
+			path = CameraHelpers;
+			sourceTree = "<group>";
+		};
+		8E9DA3F3206144C200721415 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CCC492F2B2E3646CF534F67B /* BaseViewController.swift */,
+				C5551BBC22C4FEC6003A90A9 /* SettingsDetailTableViewController.swift */,
+				C5551BBA22C4FEC6003A90A9 /* SettingsViewController.swift */,
+				C5551BBB22C4FEC6003A90A9 /* SettingTableViewCell.swift */,
+				CCC49744B0AD4FD8B846011F /* CallViewController.swift */,
+				8EEA98B51FB5A1AD00E90861 /* LoginViewController.swift */,
+				CCC4957B1C1960994048FF98 /* MainViewController.swift */,
+				8EA9CF07204EAF7400C05397 /* Theme.swift */,
+				CCC49FFC14C3B73630F79C99 /* UIHelper.swift */,
+				CCC49FD6C8261D664410E4A5 /* ConferenceView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8EEA98A71FB5A1AC00E90861 = {
+			isa = PBXGroup;
+			children = (
+				8E87345F21D3D292008E75B5 /* README.md */,
+				8E87346021D3D292008E75B5 /* LICENSE.md */,
+				92182AFC22E98F7000E5992B /* Shared */,
+				8EEA98B21FB5A1AD00E90861 /* VoximplantDemo */,
+				C5A248BA22B3F7140008FAF4 /* AudioCall */,
+				C5A8B61222D33569007DC646 /* AudioCallKit */,
+				7E54426C243BA52800450A73 /* Conference */,
+				8EEA98B11FB5A1AD00E90861 /* Products */,
+				369334A608BD108D7AD7AA32 /* Pods */,
+				1DD0F974DCACD349A4CA3C60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8EEA98B11FB5A1AD00E90861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EEA98B01FB5A1AD00E90861 /* Voximplant Demo.app */,
+				C5A248B922B3F7140008FAF4 /* AudioCall.app */,
+				C5A8B61122D33569007DC646 /* AudioCallKit.app */,
+				7E54426B243BA52800450A73 /* Conference.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EEA98B21FB5A1AD00E90861 /* VoximplantDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8E85E3881FBB06E50033831A /* VoximplantDemo.entitlements */,
+				8EDEB75B1FD022E4000EC892 /* VoximplantDemo-Bridging-Header.h */,
+				8EEA98B31FB5A1AD00E90861 /* AppDelegate.swift */,
+				CCC4967DF41EEB4E5BA1A8B5 /* Log.swift */,
+				CCC497500C8EDA589EAD7F10 /* Settings.swift */,
+				CCC492D00742D08A53364017 /* VoxController.swift */,
+				8EEA98BA1FB5A1AD00E90861 /* Assets.xcassets */,
+				CCC49DAE8A3D8804A11D92D3 /* CallManagers */,
+				8E9DA3F2206144A500721415 /* CameraHelpers */,
+				CCC49948470DE24BD407D95B /* Resources */,
+				8E9DA3F3206144C200721415 /* UI */,
+			);
+			path = VoximplantDemo;
+			sourceTree = "<group>";
+		};
+		92182AFC22E98F7000E5992B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C5491E6F22F99DB8001D9601 /* Resources */,
+				C51340D522F8952E000F4BFE /* UI */,
+				C51340D622F8971C000F4BFE /* Application.swift */,
+				C5E0CFD722B78633009C7F2D /* TokenManager.swift */,
+				92B6829E22F4492A002244B5 /* PermissionManager.swift */,
+				C5E0CFCF22B773BC009C7F2D /* Log.swift */,
+				92C8E1F522E99419006CCCFF /* Errors.swift */,
+				92C8E20022EB4139006CCCFF /* Shared.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		92B2D61722CB49A3000E6E4B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0CFAB22B77198009C7F2D /* LoginViewController.swift */,
+				92AC727622BB9938007CCB93 /* MainViewController.swift */,
+				921A728C22B8DC59001BB4E5 /* IncomingCallViewController.swift */,
+				92A6571D22BA60EF004701D4 /* CallViewController.swift */,
+				92D040B622C4A1DE007B74B4 /* CallFailedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92B2D61922CB49FB000E6E4B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C5E0CFB822B771A0009C7F2D /* Main.storyboard */,
+				92A6571922BA3F5D004701D4 /* KeyPadView.xib */,
+				C5E0CFB622B771A0009C7F2D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C51340D522F8952E000F4BFE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				92049F8F22DCD177006DB07F /* ColoredButton.swift */,
+				92F00F9122C60B7F0061AF13 /* CustomTextField.swift */,
+				92A6571B22BA598A004701D4 /* KeyPadView.swift */,
+				92049F9822DDDD47006DB07F /* ButtonWithLabel.swift */,
+				9220152622CA41F60023B5A7 /* LabelWithTimer.swift */,
+				92F00F9322C610E00061AF13 /* UIExtensions.swift */,
+				C5E0CFA522B77197009C7F2D /* UIHelper.swift */,
+				7E9F20E6243C77A7002B5700 /* AlertHelper.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C51841F723968465006778E6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C51841F9239684A2006778E6 /* fennelliott-beeping.wav */,
+				C5517F79240D4A1D00C37867 /* noisecollector-beam.aiff */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C5491E6F22F99DB8001D9601 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C51841F723968465006778E6 /* Sounds */,
+				C5491E7022F99DCD001D9601 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5491E7022F99DCD001D9601 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8B64D22D35B57007DC646 /* Roboto-Bold.ttf */,
+				C5A8B64E22D35B57007DC646 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C5A248BA22B3F7140008FAF4 /* AudioCall */ = {
+			isa = PBXGroup;
+			children = (
+				92AF8C8222CBA73200888C51 /* README.md */,
+				C5E0CFCE22B773BC009C7F2D /* AppDelegate.swift */,
+				C5E0CFE222B787FC009C7F2D /* CallManager.swift */,
+				C54DB016230147C300415EF3 /* AuthService.swift */,
+				C58D0F4623D1A16E00A337EB /* LoudAudioFile.swift */,
+				C5A248C722B3F7150008FAF4 /* Info.plist */,
+				C5A248C222B3F7150008FAF4 /* Assets.xcassets */,
+				C5E0CFA122B7713B009C7F2D /* UI */,
+				C5E0CFA022B77116009C7F2D /* Resources */,
+			);
+			path = AudioCall;
+			sourceTree = "<group>";
+		};
+		C5A8B61222D33569007DC646 /* AudioCallKit */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8B63122D35A3A007DC646 /* README.md */,
+				C5A8B65722D35BBB007DC646 /* AudioCallKit.entitlements */,
+				C5A8B61322D33569007DC646 /* AppDelegate.swift */,
+				C5A8B65C22D36D94007DC646 /* PushCallNotifier.swift */,
+				C5A8B62822D35A0D007DC646 /* CallManager.swift */,
+				C590E7C22322E0F300E112D7 /* CallWrapper.swift */,
+				C54DB018230147CB00415EF3 /* AuthService.swift */,
+				C5A8B63722D35A84007DC646 /* CXExtensions.swift */,
+				C5393E9C240D38410064006F /* CXAudioFile.swift */,
+				C5A8B65822D35CF5007DC646 /* Info.plist */,
+				C5A8B61C22D3356A007DC646 /* Assets.xcassets */,
+				C5A8B63422D35A66007DC646 /* UI */,
+				C5A8B64A22D35AE2007DC646 /* Resources */,
+			);
+			path = AudioCallKit;
+			sourceTree = "<group>";
+		};
+		C5A8B63422D35A66007DC646 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8B63F22D35AA1007DC646 /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C5A8B63F22D35AA1007DC646 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8B64222D35AC0007DC646 /* CallViewController.swift */,
+				C5A8B64022D35AC0007DC646 /* LoginViewController.swift */,
+				C5A8B64422D35AC0007DC646 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C5A8B64A22D35AE2007DC646 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8B64B22D35AF8007DC646 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5A8B64B22D35AF8007DC646 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C5A8B65322D35B63007DC646 /* KeyPadView.xib */,
+				C5A8B65222D35B63007DC646 /* LaunchScreen.storyboard */,
+				C5A8B65122D35B63007DC646 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C5E0CFA022B77116009C7F2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92B2D61922CB49FB000E6E4B /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5E0CFA122B7713B009C7F2D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				92B2D61722CB49A3000E6E4B /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CCC49948470DE24BD407D95B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4992F44D29BCD94399E4B /* ringtone.aiff */,
+				CCC492D1E3DC7CD9273A9595 /* Info.plist */,
+				CCC496137D0B89EBA0630819 /* Settings.plist */,
+				CCC499078F2B01F18BEEFA65 /* LaunchScreen.storyboard */,
+				CCC49B17EE2DA30729AC7FCA /* Main.storyboard */,
+				CCC49E089A8C2B508BB41F45 /* Roboto-Bold.ttf */,
+				CCC49400BF4083B8A847E5DE /* Roboto-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCC49DAE8A3D8804A11D92D3 /* CallManagers */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4906BF0A95E0B4C2120DB /* CallKitCallManager.swift */,
+				CCC49BF0B0DB536600405A02 /* CallManager.swift */,
+				CCC49FA3B85C0ADD1004439B /* NotificationCallManager.swift */,
+			);
+			path = CallManagers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E54426A243BA52800450A73 /* Conference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E54427E243BA52900450A73 /* Build configuration list for PBXNativeTarget "Conference" */;
+			buildPhases = (
+				2BF03DAED27C943453FBEF63 /* [CP] Check Pods Manifest.lock */,
+				7E544267243BA52800450A73 /* Sources */,
+				7E544268243BA52800450A73 /* Frameworks */,
+				7E544269243BA52800450A73 /* Resources */,
+				2D1B0C53E43E13F2A3BE70EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Conference;
+			productName = Conference;
+			productReference = 7E54426B243BA52800450A73 /* Conference.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EEA98AF1FB5A1AD00E90861 /* Voximplant Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EEA98C21FB5A1AD00E90861 /* Build configuration list for PBXNativeTarget "Voximplant Demo" */;
+			buildPhases = (
+				B09FFC74C4A3118D19112BD7 /* [CP] Check Pods Manifest.lock */,
+				8EEA98AC1FB5A1AD00E90861 /* Sources */,
+				8EEA98AD1FB5A1AD00E90861 /* Frameworks */,
+				8EEA98AE1FB5A1AD00E90861 /* Resources */,
+				D81EB4FA1ACE538997D4AA3F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voximplant Demo";
+			productName = VoxImplantSwiftDemo;
+			productReference = 8EEA98B01FB5A1AD00E90861 /* Voximplant Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5A248B822B3F7140008FAF4 /* AudioCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5A248CA22B3F7150008FAF4 /* Build configuration list for PBXNativeTarget "AudioCall" */;
+			buildPhases = (
+				3125365C215799739B650E38 /* [CP] Check Pods Manifest.lock */,
+				C5A248B522B3F7140008FAF4 /* Sources */,
+				C5A248B622B3F7140008FAF4 /* Frameworks */,
+				C5A248B722B3F7140008FAF4 /* Resources */,
+				421DA74DC6115D310D712E43 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioCall;
+			productName = AudioCall;
+			productReference = C5A248B922B3F7140008FAF4 /* AudioCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5A8B61022D33569007DC646 /* AudioCallKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5A8B62422D3356A007DC646 /* Build configuration list for PBXNativeTarget "AudioCallKit" */;
+			buildPhases = (
+				068190CF02A048128B4481F3 /* [CP] Check Pods Manifest.lock */,
+				C5A8B60D22D33569007DC646 /* Sources */,
+				C5A8B60E22D33569007DC646 /* Frameworks */,
+				C5A8B60F22D33569007DC646 /* Resources */,
+				4781FF8F7C80813808EA5958 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioCallKit;
+			productName = AudioCallKit;
+			productReference = C5A8B61122D33569007DC646 /* AudioCallKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EEA98A81FB5A1AC00E90861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Zingaya Ltd.";
+				TargetAttributes = {
+					7E54426A243BA52800450A73 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
+					8EEA98AF1FB5A1AD00E90861 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					C5A248B822B3F7140008FAF4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					C5A8B61022D33569007DC646 = {
+						CreatedOnToolsVersion = 11.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8EEA98AB1FB5A1AC00E90861 /* Build configuration list for PBXProject "Swift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EEA98A71FB5A1AC00E90861;
+			productRefGroup = 8EEA98B11FB5A1AD00E90861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EEA98AF1FB5A1AD00E90861 /* Voximplant Demo */,
+				C5A248B822B3F7140008FAF4 /* AudioCall */,
+				C5A8B61022D33569007DC646 /* AudioCallKit */,
+				7E54426A243BA52800450A73 /* Conference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E544269243BA52800450A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5442A9243BA58A00450A73 /* ConferenceParticipantView.xib in Resources */,
+				7E5442AC243BA58A00450A73 /* ConferenceCallButton.xib in Resources */,
+				7E5442C4243BA60F00450A73 /* Shared.xcassets in Resources */,
+				7E5442BE243BA58A00450A73 /* README.md in Resources */,
+				7E5442B5243BA58A00450A73 /* Assets.xcassets in Resources */,
+				7E5442B6243BA58A00450A73 /* LaunchScreen.storyboard in Resources */,
+				7E5442A7243BA58A00450A73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEA98AE1FB5A1AD00E90861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEA98BB1FB5A1AD00E90861 /* Assets.xcassets in Resources */,
+				8E87346221D3D292008E75B5 /* LICENSE.md in Resources */,
+				C51841FF239684A2006778E6 /* fennelliott-beeping.wav in Resources */,
+				CCC4977892FEA43CCA89647A /* Settings.plist in Resources */,
+				CCC49816A01C531BC34CB298 /* ringtone.aiff in Resources */,
+				CCC4927CE761DE13C2DAE8FC /* Roboto-Bold.ttf in Resources */,
+				CCC492F342C5D67A7817583B /* Roboto-Regular.ttf in Resources */,
+				C5517F7A240D4A1D00C37867 /* noisecollector-beam.aiff in Resources */,
+				92C8E20122EB4139006CCCFF /* Shared.xcassets in Resources */,
+				CCC492858EB7282AA47F554F /* LaunchScreen.storyboard in Resources */,
+				8E87346121D3D292008E75B5 /* README.md in Resources */,
+				CCC49D30AE9A409752166283 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A248B722B3F7140008FAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5184200239684A2006778E6 /* fennelliott-beeping.wav in Resources */,
+				92A6571A22BA3F5D004701D4 /* KeyPadView.xib in Resources */,
+				92C8E20222EB4139006CCCFF /* Shared.xcassets in Resources */,
+				C5517F7B240D4A1D00C37867 /* noisecollector-beam.aiff in Resources */,
+				C5A248C322B3F7150008FAF4 /* Assets.xcassets in Resources */,
+				92AF8C8322CBA73200888C51 /* README.md in Resources */,
+				C5E0CFBB22B771A0009C7F2D /* LaunchScreen.storyboard in Resources */,
+				C5491E7222F99E0E001D9601 /* Roboto-Regular.ttf in Resources */,
+				C5491E7122F99E0A001D9601 /* Roboto-Bold.ttf in Resources */,
+				C5E0CFBD22B771A0009C7F2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A8B60F22D33569007DC646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5184201239684A2006778E6 /* fennelliott-beeping.wav in Resources */,
+				C5A8B63222D35A3A007DC646 /* README.md in Resources */,
+				C5A8B65422D35B64007DC646 /* Main.storyboard in Resources */,
+				C5517F7C240D4A1D00C37867 /* noisecollector-beam.aiff in Resources */,
+				C5491E7322F9CF99001D9601 /* Shared.xcassets in Resources */,
+				C5A8B61D22D3356A007DC646 /* Assets.xcassets in Resources */,
+				C5A8B65522D35B64007DC646 /* LaunchScreen.storyboard in Resources */,
+				C5A8B65622D35B64007DC646 /* KeyPadView.xib in Resources */,
+				C5A8B65022D35B57007DC646 /* Roboto-Regular.ttf in Resources */,
+				C5A8B64F22D35B57007DC646 /* Roboto-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		068190CF02A048128B4481F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioCallKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BF03DAED27C943453FBEF63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conference-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D1B0C53E43E13F2A3BE70EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/VoxImplantSDK/VoxImplantSDK.framework",
+				"${PODS_ROOT}/VoxImplantSDK/VoxImplant.framework",
+				"${PODS_ROOT}/VoxImplantWebRTC/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplantSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conference/Pods-Conference-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3125365C215799739B650E38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioCall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		421DA74DC6115D310D712E43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioCall/Pods-AudioCall-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/VoxImplantSDK/VoxImplantSDK.framework",
+				"${PODS_ROOT}/VoxImplantSDK/VoxImplant.framework",
+				"${PODS_ROOT}/VoxImplantWebRTC/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplantSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioCall/Pods-AudioCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4781FF8F7C80813808EA5958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudioCallKit/Pods-AudioCallKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/VoxImplantSDK/VoxImplantSDK.framework",
+				"${PODS_ROOT}/VoxImplantSDK/VoxImplant.framework",
+				"${PODS_ROOT}/VoxImplantWebRTC/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplantSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioCallKit/Pods-AudioCallKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09FFC74C4A3118D19112BD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Voximplant Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81EB4FA1ACE538997D4AA3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Voximplant Demo/Pods-Voximplant Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/VoxImplantSDK/VoxImplantSDK.framework",
+				"${PODS_ROOT}/VoxImplantSDK/VoxImplant.framework",
+				"${PODS_ROOT}/VoxImplantWebRTC/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplantSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoxImplant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Voximplant Demo/Pods-Voximplant Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E544267243BA52800450A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5442C3243BA58A00450A73 /* AppDelegate.swift in Sources */,
+				7E5442C2243BA58A00450A73 /* PermissionsService.swift in Sources */,
+				7E5442AA243BA58A00450A73 /* ConferenceParticipantView.swift in Sources */,
+				7E9F20EB243C7817002B5700 /* UIExtensions.swift in Sources */,
+				7E5442BD243BA58A00450A73 /* NibLoadable.swift in Sources */,
+				7E9F20E8243C7812002B5700 /* AlertHelper.swift in Sources */,
+				7E5442B8243BA58A00450A73 /* LeaveConferenceUseCase.swift in Sources */,
+				7E5442B9243BA58A00450A73 /* ManageConferenceUseCase.swift in Sources */,
+				7E5442C0243BA58A00450A73 /* VoximplantAuthService.swift in Sources */,
+				7E5442BC243BA58A00450A73 /* Errors.swift in Sources */,
+				7E5442A8243BA58A00450A73 /* Storyboard.swift in Sources */,
+				7E5442B0243BA58A00450A73 /* ConferenceCallViewController.swift in Sources */,
+				7E5442B2243BA58A00450A73 /* LoginView.swift in Sources */,
+				7E5442AB243BA58A00450A73 /* ConferenceCallButton.swift in Sources */,
+				7E5442AF243BA58A00450A73 /* ConferenceCallModel.swift in Sources */,
+				7E5442B4243BA58A00450A73 /* LoginTextField.swift in Sources */,
+				7E5442AE243BA58A00450A73 /* ConferenceView.swift in Sources */,
+				7E5442B1243BA58A00450A73 /* StoryAssembler.swift in Sources */,
+				7E5442B3243BA58A00450A73 /* LoginViewController.swift in Sources */,
+				7E5442AD243BA58A00450A73 /* ConferenceCallButtonModel.swift in Sources */,
+				7E5442BA243BA58A00450A73 /* JoinConferenceUseCase.swift in Sources */,
+				7E5442C1243BA58A00450A73 /* VoximplantAPIService.swift in Sources */,
+				7E5442BF243BA58A00450A73 /* VoximplantConferenceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EEA98AC1FB5A1AD00E90861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEA98B61FB5A1AD00E90861 /* LoginViewController.swift in Sources */,
+				8EEA98B41FB5A1AD00E90861 /* AppDelegate.swift in Sources */,
+				CCC49EF1E1DBDE7F6598462C /* Settings.swift in Sources */,
+				CCC49C6056A7AD7A8858EFA5 /* VoxController.swift in Sources */,
+				CCC490E9B4BE368B70290A44 /* CallKitCallManager.swift in Sources */,
+				8EA9CF08204EAF7400C05397 /* Theme.swift in Sources */,
+				CCC49B74A3381D7361B52CF6 /* CallManager.swift in Sources */,
+				CCC499656A96BEF87DB86BE4 /* MainViewController.swift in Sources */,
+				CCC49C7F300BCAE8F040C8EB /* BaseViewController.swift in Sources */,
+				CCC492F49D7BFF70DC8D60BE /* CallViewController.swift in Sources */,
+				CCC498F59BFC27654895B2F1 /* CustomCamera.swift in Sources */,
+				C5551BBF22C4FEC6003A90A9 /* SettingsDetailTableViewController.swift in Sources */,
+				CCC49035527628A7858EC419 /* CameraPreprocessor.swift in Sources */,
+				C5551BBE22C4FEC6003A90A9 /* SettingTableViewCell.swift in Sources */,
+				C5551BBD22C4FEC6003A90A9 /* SettingsViewController.swift in Sources */,
+				CCC49714DABAFC7CAA033F90 /* UIHelper.swift in Sources */,
+				CCC492C1E7A1EDE973F8F396 /* NotificationCallManager.swift in Sources */,
+				CCC49FB0513FDFD9B086E1CD /* Log.swift in Sources */,
+				CCC49BCE7D8B72E6BC0C0419 /* ConferenceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A248B522B3F7140008FAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51340D822F8971F000F4BFE /* Application.swift in Sources */,
+				C58D0F4823D1A18200A337EB /* LoudAudioFile.swift in Sources */,
+				92F00F9422C610E00061AF13 /* UIExtensions.swift in Sources */,
+				C5E0CFB522B77198009C7F2D /* LoginViewController.swift in Sources */,
+				921A728D22B8DC59001BB4E5 /* IncomingCallViewController.swift in Sources */,
+				C5E0CFDB22B78633009C7F2D /* TokenManager.swift in Sources */,
+				C5E0CFD322B773BC009C7F2D /* Log.swift in Sources */,
+				92A6571E22BA60EF004701D4 /* CallViewController.swift in Sources */,
+				C54DB017230147C300415EF3 /* AuthService.swift in Sources */,
+				92F00F9222C60B7F0061AF13 /* CustomTextField.swift in Sources */,
+				92049F9922DDDD47006DB07F /* ButtonWithLabel.swift in Sources */,
+				C5E0CFD222B773BC009C7F2D /* AppDelegate.swift in Sources */,
+				7E9F20EA243C7813002B5700 /* AlertHelper.swift in Sources */,
+				C5E0CFE422B787FC009C7F2D /* CallManager.swift in Sources */,
+				92049F9022DCD177006DB07F /* ColoredButton.swift in Sources */,
+				92D040B722C4A1DE007B74B4 /* CallFailedViewController.swift in Sources */,
+				9220152722CA41F60023B5A7 /* LabelWithTimer.swift in Sources */,
+				92AC727722BB9938007CCB93 /* MainViewController.swift in Sources */,
+				92C8E1F622E99419006CCCFF /* Errors.swift in Sources */,
+				92A6571C22BA598A004701D4 /* KeyPadView.swift in Sources */,
+				92B6829F22F4492A002244B5 /* PermissionManager.swift in Sources */,
+				C5E0CFAF22B77198009C7F2D /* UIHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A8B60D22D33569007DC646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A8B61422D33569007DC646 /* AppDelegate.swift in Sources */,
+				C5393E9D240D38420064006F /* CXAudioFile.swift in Sources */,
+				C5491E6222F98EA8001D9601 /* Log.swift in Sources */,
+				C5A8B64722D35AC0007DC646 /* CallViewController.swift in Sources */,
+				7E9F20E9243C7813002B5700 /* AlertHelper.swift in Sources */,
+				C5491E6D22F99AF3001D9601 /* ColoredButton.swift in Sources */,
+				C590E7C32322E0F300E112D7 /* CallWrapper.swift in Sources */,
+				C5491E6722F99230001D9601 /* CustomTextField.swift in Sources */,
+				C5A8B64922D35AC0007DC646 /* MainViewController.swift in Sources */,
+				C5491E6422F98EBE001D9601 /* PermissionManager.swift in Sources */,
+				C54DB019230147CB00415EF3 /* AuthService.swift in Sources */,
+				C5491E6822F99295001D9601 /* KeyPadView.swift in Sources */,
+				C5A8B63C22D35A84007DC646 /* CXExtensions.swift in Sources */,
+				C5491E6322F98EB0001D9601 /* Errors.swift in Sources */,
+				C5491E6E22F99D8C001D9601 /* Application.swift in Sources */,
+				C5491E6B22F99961001D9601 /* ButtonWithLabel.swift in Sources */,
+				C5491E6522F98EC7001D9601 /* TokenManager.swift in Sources */,
+				C5491E6C22F99AE4001D9601 /* UIExtensions.swift in Sources */,
+				C5A8B66022D36D94007DC646 /* PushCallNotifier.swift in Sources */,
+				C5491E6A22F9944B001D9601 /* UIHelper.swift in Sources */,
+				C5491E6922F99298001D9601 /* LabelWithTimer.swift in Sources */,
+				C5A8B62E22D35A0D007DC646 /* CallManager.swift in Sources */,
+				C5A8B64522D35AC0007DC646 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E544280243BA58A00450A73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E544281243BA58A00450A73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E544295243BA58A00450A73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E544296243BA58A00450A73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E54427C243BA52900450A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89014556023F6FFACF6C7FBD /* Pods-Conference.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = W9BHJBL635;
+				INFOPLIST_FILE = "$(SRCROOT)/Conference/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.Conference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E54427D243BA52900450A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DDA1DB80F23DA3798B331D7 /* Pods-Conference.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = W9BHJBL635;
+				INFOPLIST_FILE = "$(SRCROOT)/Conference/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.Conference;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EEA98C01FB5A1AD00E90861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EEA98C11FB5A1AD00E90861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EEA98C31FB5A1AD00E90861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3BF8286786AE1BB06A110E /* Pods-Voximplant Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoximplantDemo/VoximplantDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = Y7K45XUMA7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/VoximplantDemo/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zadcall.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/VoximplantDemo/VoximplantDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8EEA98C41FB5A1AD00E90861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFA7EF3ECDEFF26703AE8A1 /* Pods-Voximplant Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoximplantDemo/VoximplantDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = Y7K45XUMA7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/VoximplantDemo/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zadcall.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/VoximplantDemo/VoximplantDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C5A248C822B3F7150008FAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA49D925EB27328780F4D5C /* Pods-AudioCall.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = W9BHJBL635;
+				INFOPLIST_FILE = AudioCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift.AudioCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5A248C922B3F7150008FAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5ACE2A438EC9842FA70FEF /* Pods-AudioCall.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = W9BHJBL635;
+				INFOPLIST_FILE = AudioCall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift.AudioCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5A8B62222D3356A007DC646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3458E1AF5E98710715085B /* Pods-AudioCallKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioCallKit/AudioCallKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = W9BHJBL635;
+				INFOPLIST_FILE = AudioCallKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift.AudioCallKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5A8B62322D3356A007DC646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C6A5D040C67D56C32C6412 /* Pods-AudioCallKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioCallKit/AudioCallKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 14;
+				DEVELOPMENT_TEAM = W9BHJBL635;
+				INFOPLIST_FILE = AudioCallKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.6;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift.AudioCallKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E54427E243BA52900450A73 /* Build configuration list for PBXNativeTarget "Conference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E54427C243BA52900450A73 /* Debug */,
+				7E54427D243BA52900450A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEA98AB1FB5A1AC00E90861 /* Build configuration list for PBXProject "Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEA98C01FB5A1AD00E90861 /* Debug */,
+				8EEA98C11FB5A1AD00E90861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EEA98C21FB5A1AD00E90861 /* Build configuration list for PBXNativeTarget "Voximplant Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EEA98C31FB5A1AD00E90861 /* Debug */,
+				8EEA98C41FB5A1AD00E90861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5A248CA22B3F7150008FAF4 /* Build configuration list for PBXNativeTarget "AudioCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A248C822B3F7150008FAF4 /* Debug */,
+				C5A248C922B3F7150008FAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5A8B62422D3356A007DC646 /* Build configuration list for PBXNativeTarget "AudioCallKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A8B62222D3356A007DC646 /* Debug */,
+				C5A8B62322D3356A007DC646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EEA98A81FB5A1AC00E90861 /* Project object */;
+}
