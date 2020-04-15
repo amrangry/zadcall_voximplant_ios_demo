@@ -42,8 +42,8 @@
 		7E9F20E9243C7813002B5700 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F20E6243C77A7002B5700 /* AlertHelper.swift */; };
 		7E9F20EA243C7813002B5700 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F20E6243C77A7002B5700 /* AlertHelper.swift */; };
 		7E9F20EB243C7817002B5700 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F00F9322C610E00061AF13 /* UIExtensions.swift */; };
+		84347E33244702DD002CF527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84347E32244702DD002CF527 /* GoogleService-Info.plist */; };
 		8E87346121D3D292008E75B5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E87345F21D3D292008E75B5 /* README.md */; };
-		8E87346221D3D292008E75B5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 8E87346021D3D292008E75B5 /* LICENSE.md */; };
 		8EA9CF08204EAF7400C05397 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9CF07204EAF7400C05397 /* Theme.swift */; };
 		8EEA98B41FB5A1AD00E90861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA98B31FB5A1AD00E90861 /* AppDelegate.swift */; };
 		8EEA98B61FB5A1AD00E90861 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA98B51FB5A1AD00E90861 /* LoginViewController.swift */; };
@@ -178,10 +178,10 @@
 		7E5442A6243BA58A00450A73 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E9F20E6243C77A7002B5700 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		7F5ACE2A438EC9842FA70FEF /* Pods-AudioCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioCall.release.xcconfig"; path = "Target Support Files/Pods-AudioCall/Pods-AudioCall.release.xcconfig"; sourceTree = "<group>"; };
+		84347E32244702DD002CF527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89014556023F6FFACF6C7FBD /* Pods-Conference.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conference.debug.xcconfig"; path = "Target Support Files/Pods-Conference/Pods-Conference.debug.xcconfig"; sourceTree = "<group>"; };
 		8E85E3881FBB06E50033831A /* VoximplantDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoximplantDemo.entitlements; sourceTree = "<group>"; };
 		8E87345F21D3D292008E75B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8E87346021D3D292008E75B5 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		8EA9CF07204EAF7400C05397 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8EDEB75B1FD022E4000EC892 /* VoximplantDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoximplantDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8EEA98B01FB5A1AD00E90861 /* Voximplant Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voximplant Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -468,7 +468,6 @@
 			isa = PBXGroup;
 			children = (
 				8E87345F21D3D292008E75B5 /* README.md */,
-				8E87346021D3D292008E75B5 /* LICENSE.md */,
 				92182AFC22E98F7000E5992B /* Shared */,
 				8EEA98B21FB5A1AD00E90861 /* VoximplantDemo */,
 				C5A248BA22B3F7140008FAF4 /* AudioCall */,
@@ -617,6 +616,7 @@
 				C5A8B63722D35A84007DC646 /* CXExtensions.swift */,
 				C5393E9C240D38410064006F /* CXAudioFile.swift */,
 				C5A8B65822D35CF5007DC646 /* Info.plist */,
+				84347E32244702DD002CF527 /* GoogleService-Info.plist */,
 				C5A8B61C22D3356A007DC646 /* Assets.xcassets */,
 				C5A8B63422D35A66007DC646 /* UI */,
 				C5A8B64A22D35AE2007DC646 /* Resources */,
@@ -835,10 +835,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EEA98AF1FB5A1AD00E90861 /* Voximplant Demo */,
-				C5A248B822B3F7140008FAF4 /* AudioCall */,
 				C5A8B61022D33569007DC646 /* AudioCallKit */,
+				C5A248B822B3F7140008FAF4 /* AudioCall */,
 				7E54426A243BA52800450A73 /* Conference */,
+				8EEA98AF1FB5A1AD00E90861 /* Voximplant Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -863,7 +863,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EEA98BB1FB5A1AD00E90861 /* Assets.xcassets in Resources */,
-				8E87346221D3D292008E75B5 /* LICENSE.md in Resources */,
 				C51841FF239684A2006778E6 /* fennelliott-beeping.wav in Resources */,
 				CCC4977892FEA43CCA89647A /* Settings.plist in Resources */,
 				CCC49816A01C531BC34CB298 /* ringtone.aiff in Resources */,
@@ -906,6 +905,7 @@
 				C5A8B61D22D3356A007DC646 /* Assets.xcassets in Resources */,
 				C5A8B65522D35B64007DC646 /* LaunchScreen.storyboard in Resources */,
 				C5A8B65622D35B64007DC646 /* KeyPadView.xib in Resources */,
+				84347E33244702DD002CF527 /* GoogleService-Info.plist in Resources */,
 				C5A8B65022D35B57007DC646 /* Roboto-Regular.ttf in Resources */,
 				C5A8B64F22D35B57007DC646 /* Roboto-Bold.ttf in Resources */,
 			);
@@ -1412,16 +1412,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = VoximplantDemo/VoximplantDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = Y7K45XUMA7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/VoximplantDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zadcall.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/VoximplantDemo/VoximplantDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1439,13 +1441,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = Y7K45XUMA7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/VoximplantDemo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zadcall.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/VoximplantDemo/VoximplantDemo-Bridging-Header.h";
@@ -1509,14 +1511,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 14;
-				DEVELOPMENT_TEAM = W9BHJBL635;
+				DEVELOPMENT_TEAM = Y7K45XUMA7;
 				INFOPLIST_FILE = AudioCallKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift.AudioCallKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zadcall.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1534,13 +1536,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 14;
-				DEVELOPMENT_TEAM = W9BHJBL635;
+				DEVELOPMENT_TEAM = Y7K45XUMA7;
 				INFOPLIST_FILE = AudioCallKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.6;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.voximplant.demos.swift.AudioCallKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zadcall.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
